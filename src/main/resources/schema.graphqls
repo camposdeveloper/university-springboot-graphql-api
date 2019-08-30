@@ -1,0 +1,14 @@
+type Usuario {
+	id: ID
+	nome: String
+}
+	
+type Query {
+    getStatus: String
+    buscarUsuario(id: Int!): Usuario
+    buscarUsuarios: [Usuario]
+}
+
+type Mutation {
+	salvarUsuario(nome: String): Usuario
+}
